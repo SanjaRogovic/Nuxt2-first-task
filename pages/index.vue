@@ -1,14 +1,3 @@
-<!-- <template>
-  <!<Tutorial/> -->
-  <!-- <h1>First project Nuxt2</h1>
-</template>
-
-<script>
-export default {
-  name: 'IndexPage'
-}
-</script> --> 
-
 <template>
   <div>
     <form @submit.prevent="submitForm">
@@ -29,3 +18,61 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import card from "~/components/Card.vue"
+
+export default {
+  components: { 
+    Card: card 
+  },
+  data() {
+    return {
+      serviceName: "",
+      businessName: "",
+      serviceRating: 1,
+  }
+},
+  computed: {
+    cards() {
+      return [this.serviceName, this.businessName, this.serviceRating]
+  },
+},
+  methods: {
+    submitForm() {
+      const newCard = {
+        serviceName: this.serviceName,
+        businessName: this.businessName,
+        serviceRating: this.serviceRating,
+    }
+    this.$store.commit("addCard", card)
+
+    // reset form input fields
+    this.serviceName = ""
+    this.businessName = ""
+    this.serviceRating = 1
+    }
+  }
+}
+
+</script>
+
+<style scoped>
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 40%;
+    margin-right: 2rem;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+</style>
