@@ -4,7 +4,9 @@
             HOME
         </nuxt-link>
         <h1>About</h1>
+        <hr size="1">
         <p> {{ description }}</p>
+        <hr size="1">
         <h2>Cards starting with M</h2>
         <div class="cards">
             <Card v-for="(card, index) in cardsStartingWithM" :key="index" :card="card" />
@@ -53,15 +55,22 @@
         text-transform: capitalize;
         color: #047e99;
         text-align: center;
-        font-weight: 800;
+        font-weight: 650;
     }
 
     h1 {
         text-align: center;
+        padding: 20px;
     }
 
     h2 {
         text-align: center;
+        padding: 15px;
+    }
+
+    p {
+        line-height: 1.8em;
+        padding: 20px;
     }
 
     @media (max-width: 600px) {
