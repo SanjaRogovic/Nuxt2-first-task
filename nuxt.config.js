@@ -21,7 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@fortawesome/fontawesome-free/css/all.css',
+    '@fortawesome/fontawesome-free/css/all.css', // fontawesome for star icons
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
