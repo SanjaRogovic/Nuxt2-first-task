@@ -9,7 +9,7 @@ export const state = () => ({
   };
   
   export const getters = {
-    getCardsStartingWithM: (state) => {
+    cardsStartingWithM: (state) => {
       return state.cards.filter((card) => card.serviceName.toLowerCase().startsWith('m'));  //filter the cards whose service name starts with "m"
     },
   };

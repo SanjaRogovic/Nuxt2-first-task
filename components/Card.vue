@@ -26,8 +26,9 @@ export default {
 
 <style scoped>
 p {
-    font-size: 1.1em;
-    margin-top: 5px;
+    font-size: 1em;
+    line-height: 0.5em;
+    padding: 10px;
 }
 
 .rating i {
