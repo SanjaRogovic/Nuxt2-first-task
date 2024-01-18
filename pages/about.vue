@@ -25,7 +25,7 @@
         //text content about coding experience 
         return {
             description: 
-            "This is page where I describe my experience and challenges coding this task. I enjoyed using Nuxt 2 and Vue to create a simple web app with a form and cards. I used the options API to define the data, computed properties, methods, and lifecycle hooks. I also used vuex to manage the state of the cards and create getters and mutations. i faced some challenges with making the cards responsive on mobile devices, but I solved them by using flexbox and media queries. I also learned how to use nuxt-link to create links between pages and use props to pass data to components."
+            "This is page where I describe my experience and challenges coding this task. I enjoyed using Nuxt 2 and Vue to create a simple web app with a form and cards. I used the options API to define the data, computed properties, methods, and lifecycle hooks. I also used vuex to manage the state of the cards and create getters and mutations. I faced some challenges with making the cards responsive on mobile devices, but I solved them by using flexbox and media queries. I also learned how to use nuxt-link to create links between pages and use props to pass data to components."
         }
     },
     computed: {
